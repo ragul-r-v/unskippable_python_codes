@@ -1,0 +1,56 @@
+check the number is odd or even 
+## code here 
+
+n=10
+if n % 2 == 0:
+	print(f"{n} is even")
+else:
+	print(f"{n} is odd")
+
+
+find the largest of three numbers
+## code here
+
+a,b,c = 46,98,56
+
+if a>=b and a>=c:
+	print(f"Largest is {a}")
+elif b>=a and b>=c:
+	print(f"Largest is {b}")
+else:
+	print{f"Largest is {c}")
+
+check if a number is prime number
+## code here
+
+n = 79
+if n<=1:
+	print(f"{n} is not a prime number")
+else:
+	is_prime = True 
+	for I in range(2,int(n**0.5)+1):
+		if n % I ==0:
+			is_prime = False
+			break
+	print(f"{n} is prime" if is_prime else f"{n} is not a prime")
+
+
+calculate factorial of number 
+## code here
+
+n = 24
+fact = 1
+for I in range(1,n+1):
+	fact *= I
+print(f"Factorial of {n} is {fact}")
+
+
+
+generate Fibonacci series upto  n terms 
+## code here 
+
+n = 10
+a,b=0,1
+for _ in range(n):
+	print(a,end=" ")
+	a,b=b,a+b
