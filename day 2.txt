@@ -1,0 +1,50 @@
+check if a number is palindrome
+## code here
+
+n = 1331
+orig = n
+rev =0
+while n > 0:
+	rev = rev*10 + n%10
+	n //=10
+print(f"Palindrome? {rev == orig}")
+
+
+check if a number is Armstrong number
+## code here 
+
+num = 123
+s=str(num)
+power = len(s)
+arm_sum = sum(int(d)**power for d in s)
+print(f"{num} is Armstrong? {arm_sum == num}")
+
+
+check if a number is perfect 
+## code here
+
+n = 28
+div_sum=0
+for i in range(1,n//2+1):
+	if n%i == 0:
+		div_sum += i
+print(f"{n} is perfect? {div_sum == n}")
+
+
+sum of digits of number
+## code here
+
+n = 12335
+total = 0
+while n>0:
+	total += n%10
+	n//10
+print(f" Sum of digits: {total}")
+
+reverse a string
+## code here
+
+a = "ragul"
+rev = s[::-1]
+print(f"Reversed string: {rev}")
+
