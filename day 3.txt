@@ -1,0 +1,65 @@
+check  if a string is  a palindrome
+## code here
+
+def is_palindrome(s):
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+word = input("Enter a word: ")
+
+if is_palindrome(word):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+
+
+
+count vowels in a string
+## code here
+
+text = input("Enter a string: ")
+count = 0
+for ch in text:
+    if ch.lower() in "aeiou":
+        count += 1
+print("Number of vowels:", count)
+
+count consonants in a string
+## code here
+
+text = input("Enter a string: ")
+count = 0
+for ch in text:
+    if ch.isalpha() and ch.lower() not in "aeiou":
+        count += 1
+print("Number of consonants:", count)
+
+
+count occurrences of a specific elements in a list
+## code here
+
+numbers = [2, 5, 2, 8, 2, 9]
+target = 2
+count = 0
+for num in numbers:
+    if num == target:
+        count += 1
+print("Occurrences:", count)
+
+Remove duplicates from a list 
+## code here
+
+numbers = [1, 2, 2, 3, 1, 4, 3]
+unique = []
+for num in numbers:
+    if num not in unique:
+        unique.append(num)
+print(unique)
